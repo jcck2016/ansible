@@ -1,0 +1,230 @@
+    1  subscription-manager register --username jchuv2024 --password 224P@ssword224
+    2  sudo subscription-manager register --username jchuv2024 --password 224P@ssword224
+    3  sudo subscription-manager register --username jchu@vectorusa.com --password 224P@ssword224
+    4  sudo subscription-manager 
+    5  sudo subscription-manager status
+    6  sudo subscription-manager list
+    7  sudo subscription-manager refresh 
+    8  sudo subscription-manager status
+    9  sudo dnf update
+   10  \
+   11  sudo hostnamectl hostname rhel9-1
+   12  apropos init
+   13  tree
+   14  sudo dnf install tree
+   15  sed
+   16  df 
+   17  exit
+   18  sudo insights-client --register
+   19  sudo dnf install ansible-
+   20  sudo dnf install ansible
+   21  python3
+   22  sudo shutdown now
+   23  sudo dnf install sssd realmd oddjob oddjob-mkhomedir adcli samba-common samba-common-tools krb5-workstation openldap-clients policycoreutils-python -y
+   24  realm
+   25  sudo yum install sssd realmd oddjob oddjob-mkhomedir adcli samba-common samba-common-tools krb5-workstation openldap-clients policycoreutils-python -y
+   26  sudo dnf install sssd realmd oddjob oddjob-mkhomedir adcli samba-common samba-common-tools krb5-workstation openldap-clients policycoreutils-python -y
+   27  realm
+   28  exit
+   29  sudo
+   30  realm
+   31  sudo yum install sssd realmd oddjob oddjob-mkhomedir adcli samba-common samba-common-tools krb5-workstation openldap-clients policycoreutils-python -y
+   32  wget http://mirror.centos.org/centos/7/os/x86_64/Packages/python-chardet-2.2.1-3.el7.noarch.rpm
+   33  sudo yum install ./python-chardet-2.2.1-3.el7.noarch.rpm
+   34  sudo dnf install python3
+   35  which python
+   36  exit
+   37  df
+   38  yum
+   39  yum install terraform
+   40  sudo yum update
+   41  sudo yum install pipx -y
+   42  pipx install --include-deps ansible==2.10.7
+   43  echo $PATH | grep -q "$HOME/.local/bin" && echo "Found" || echo "Not found"
+   44  ansible --version
+   45  man pipx
+   46  ssh-keygen -t rsa -b 4096 -N "" -f ~/.ssh/id_rsa
+   47  hostnamectl -hostname wkzrh1srv
+   48  sudo hostnamectl -hostname wkzrh1srv
+   49  sudo hostnamectl wkzrh1srv
+   50  sudo hostnamectl hostname wkzrh1srv
+   51  hostname
+   52  exit
+   53  ipa
+   54  ip a
+   55  exit
+   56  subscription-manager register
+   57  sudo subscription-manager register
+   58  history
+   59  sudo -i
+   60  exit
+   61  ansible --version
+   62  history
+   63  sudo -i
+   64  ssh vagrant@192.168.77.11
+   65  ssh vagrant@192.168.77.12
+   66  ls -la .ssh
+   67  history
+   68  sudo yum install tmux
+   69  ls -la .ssh
+   70  ssh-keygen -t ed25519 -C "Jchu default key 7/17/20244"
+   71  ls -la .ssh
+   72  ssh-copy-id -i ~/.ssh/id_ed25519.pub 192.168.77.11
+   73  ssh-copy-id -i ~/.ssh/id_ed25519.pub 192.168.77.12
+   74  ssh 192.168.77.11
+   75  ssh 192.168.77.12
+   76  ssh-keygen -t ed25519 -C "ansible"
+   77  ssh-copy-id -i ~/.ssh/ansible.pub 192.168.77.11
+   78  ssh-copy-id -i ~/.ssh/ansible.pub 192.168.77.12
+   79  ssh -i ~/.ssh/ansible 192.168.77.11
+   80  eval $(ssh-agent)
+   81  ps aux | grep 5114
+   82  ps aux 
+   83  ps aux | grep 5114
+   84  ssh-add
+   85  ssh 192.168.77.11
+   86  echo $HISTSIZE
+   87  echo $HISTFILESIZE
+   88  alias
+   89  alias ssha=eval $(ssh-agent) && ssh-add
+   90  alias ssha='eval $(ssh-agent) && ssh-add'
+   91  alias
+   92  ps aux | grep 5114
+   93  vi ~/.bashrc
+   94  exit
+   95  ssha
+   96  history
+   97  ssh 192.168.77.11
+   98  git
+   99  which git
+  100  mkdir -p ansible_main
+  101  cd ansible_main/
+  102  echo "# ansible" >> README.MD
+  103  ls
+  104  git init
+  105  git add README.MD 
+  106  git commit -m "readme.md v0"
+  107  git config 
+  108  cat ~/.ssh/id_ed25519.pub 
+  109  git clone git@github.com:jcck2016/ansible.git
+  110  ls
+  111  git config --global user.name "jasol chu"
+  112  git config --global user.email "jcck@somewhere.net"
+  113  cat ~/.gitconfig 
+  114  cd ansible/
+  115  vi README2.MD
+  116  ls -l
+  117  cat README2.MD 
+  118  cd ..
+  119  cd ansible/
+  120  git status
+  121  git add .
+  122  git status
+  123  git commit -m "new README2.MD v0"
+  124  git status
+  125  git push orgin master
+  126  git push origin master
+  127  git push origin main
+  128  history
+  129  git diff README2.MD
+  130  echo "ttt" >> README2.MD 
+  131  git status
+  132  git add .
+  133  git commit -m "README2.MD v0.1"
+  134  git push origin main
+  135  git diff README2.MD
+  136  echo "ttt2" >> README2.MD 
+  137  git diff README2.MD
+  138  git add .
+  139  git commit -m "README2.MD v0.1a"
+  140  git push origin main
+  141  ls
+  142  vi inventory
+  143  ls
+  144  git status
+  145  git add .
+  146  git status
+  147  git commit -m "inventory file added - with wkzrh1a/2a v0"
+  148  git push origin main
+  149  ansible all --key-file ~/.ssh/ansible -i inventory -m ping
+  150  ansible --version
+  151  pip
+  152  vi ansible.cfg
+  153  cat ansible.cfg 
+  154  ls /etc/ansible/
+  155  ansible all -m ping
+  156  ansible inventory -m ping
+  157  ls
+  158  ansible -m ping
+  159  ansible localhost -m ping
+  160  ansible inventory -m ping
+  161  vi inventory 
+  162  ansible inventory -m ping
+  163  ansible -m ping
+  164  cp inventory hosts
+  165  ansible hosts -m ping
+  166  ansible all -m ping
+  167  ansible all --key-file ~/.ssh/ansible -i inventory -m ping
+  168  vi ansible.cfg 
+  169  ansible all -m ping
+  170  ansible all --key-file ~/.ssh/ansible -i inventory -m ping
+  171  vi ansible.cfg 
+  172  ansible all -m ping
+  173  cat ansible.cfg 
+  174  ansible -all --list-hosts
+  175  ansible all --list-hosts
+  176  ansible all -m gather_facts
+  177  ansible all -m gather_facts | grep network
+  178  ansible all -m gather_facts | grep ip
+  179  git status
+  180  git add .
+  181  git commit -m "added/edit inventory/ansible.cfg/hosts"
+  182  git push origin main
+  183  git status
+  184  yum update
+  185  ansible all -m yum -a update_cache=true
+  186  ansible all -m yum -a update_cache=true --become --ask-become-pass
+  187  ansible all -m yum -a install nano
+  188  python3 -m pip -V
+  189  curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+  190  python3 get-pip.py --user
+  191  pip
+  192  ansible all -m yum -a name=vim-nox
+  193  ssha
+  194  ansible all -m yum -a name=vim-nox
+  195  ansible all -m yum -a name=vim-nox --become --ask-become
+  196  ansible all -m yum -a name="install vim-nox" --become --ask-become
+  197  ansible all -m ansible.builtin.yum_repository -a name="install vim-nox" --become --ask-become
+  198  vi yum
+  199  rn yum yum.yml
+  200  vi yum 
+  201  mv yum yum-pb.yml
+  202  ansible-playbook yum-pb.yml
+  203  vi yum-pb.yml 
+  204  sudo yum install vim-nox
+  205  stop
+  206  vtop
+  207  tree
+  208  ansible all -m ansible.builtin.yum_repository -a name="install vim-nox" --become --ask-become
+  209  vi yum-pb.yml 
+  210  ansible-playbook yum-pb.yml 
+  211  vi yum-pb.yml 
+  212  ansible-playbook yum-pb.yml 
+  213  vi yum-pb.yml 
+  214  ansible-playbook yum-pb.yml 
+  215  ansible -m yum -a name=htop --become --ask-become
+  216  ansible all -m yum -a name=htop --become --ask-become
+  217  ansible all -m yum -a name=tmux --become --ask-become
+  218  cat /var/log/
+  219  cd /var/log
+  220  ls
+  221  cat dnf.rpm.log 
+  222  ansible all -m yum -a name=snapd --become --ask-become
+  223  pwd
+  224  cd ~
+  225  cd ansible_main/
+  226  cd ansible/
+  227  ansible all -m yum -a name=snapd --become --ask-become
+  228  echo history
+  229  $HIST
+  230  history >> hist.txt
