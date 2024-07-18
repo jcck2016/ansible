@@ -1,0 +1,33 @@
+[vagrant@wkzrh1srv ansible]$ vi installs.yml
+[vagrant@wkzrh1srv ansible]$ [vagrant@wkzrh1srv ansible]$ ansible-playbook --ask-become-pass installs.yml
+BECOME password:
+
+PLAY [all] ******************************************************************************************************************************************************************************************************
+
+TASK [Gathering Facts] ******************************************************************************************************************************************************************************************
+[DEPRECATION WARNING]: Distribution rhel 9.4 on host 192.168.77.11 should use /usr/libexec/platform-python, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future
+Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information. This feature
+ will be removed in version 2.12. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+ok: [192.168.77.11]
+[DEPRECATION WARNING]: Distribution rhel 9.4 on host 192.168.77.12 should use /usr/libexec/platform-python, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future
+Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information. This feature
+ will be removed in version 2.12. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+ok: [192.168.77.12]
+
+TASK [install httpd package] ************************************************************************************************************************************************************************************
+changed: [192.168.77.12]
+changed: [192.168.77.11]
+
+TASK [install nano package] *************************************************************************************************************************************************************************************
+changed: [192.168.77.12]
+changed: [192.168.77.11]
+
+TASK [Add repository] *******************************************************************************************************************************************************************************************
+changed: [192.168.77.12]
+changed: [192.168.77.11]
+
+PLAY RECAP ******************************************************************************************************************************************************************************************************
+192.168.77.11              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+192.168.77.12              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+
+[vagrant@wkzrh1srv ansible]$
