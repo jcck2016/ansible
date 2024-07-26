@@ -1,22 +1,28 @@
 ---
 
-- hosts: all
+- hosts: ubuntu
   become: true
   tasks:
 
+  - name: update and upgrade packages
+    apt:
+      update_cache: yes
+      upgrade: 'yes'
+      
+
   - name: install htop package
-    yum:
+    apt:
       name: htop
       state: present
   - name: install nginx package
-    yum:
+    apt:
       name: nginx
       state: present
   - name: install nano package
-    yum:
+    apt:
       name: nano
       state: present
   - name: update repo index
-    yum:
+    apt:
       update_cache: yes 
 
